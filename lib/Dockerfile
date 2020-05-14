@@ -33,3 +33,6 @@ COPY kapacitor.conf /etc/kapacitor/kapacitor.conf
 EXPOSE 9092
 
 COPY entrypoint.sh /entrypoint.sh
+
+# load udf functions
+ADD udf /usr/lib/kapacitor_udf

@@ -1,5 +1,6 @@
 FROM python:3.7.7-stretch
 
+RUN pip install google
 RUN pip install protobuf
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
